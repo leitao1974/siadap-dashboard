@@ -7,7 +7,7 @@ st.set_page_config(page_title="Monitorização SIADAP 2026", layout="wide")
 st.title("📊 Monitorização de Objetivos SIADAP 2026")
 
 # Link do teu CSV publicado
-CSV_URL = "https://docs.google.com/spreadsheets/d/1M-VBrYXjwhVodJp9WUbJd_2s3F2ifv_jdFBmzZmHH7I/edit?usp=sharing"
+CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTt48fFQi9XDLxOhlR1CGHPizyglJNEXCukIxWpN3_lN6d5aBiwuHxAPJbI8apqCmq8thF4XA6H0haN/pubhtml?gid=2058887131&single=true"
 
 @st.cache_data(ttl=600)
 def load_data():
