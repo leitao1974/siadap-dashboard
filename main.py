@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(page_title="SIADAP 2026", layout="wide")
 st.title("📊 Monitorização de Objetivos SIADAP 2026")
 
-SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTt48fFQi9XDLxOhlR1CGHPizyglJNEXCukIxWpN3_lN6d5aBiwuHxAPJbI8apqCmq8thF4XA6H0haN/pubhtml?gid=2058887131&single=true"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTt48fFQi9XDLxOhlR1CGHPizyglJNEXCukIxWpN3_lN6d5aBiwuHxAPJbI8apqCmq8thF4XA6H0haN/pub?gid=2058887131&single=true&output=csv"
 
 @st.cache_data(ttl=600)
 def load_data():
