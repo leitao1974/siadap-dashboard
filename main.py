@@ -18,10 +18,10 @@ try:
     
     st.title("📊 Monitorização de Objetivos SIADAP 2026")
     
-    # 1. CÁLCULO DINÂMICO: Contar IDs por Objetivo
-    # Isto assume que cada linha no teu Sheets é um processo com um ID
-    contagem_processos = df.groupby('Objetivo')['ID'].count().reset_index()
-    contagem_processos.columns = ['Objetivo', 'Nº de Processos']
+   # Substitui a linha onde fazes o groupby por isto:
+# Repara que usamos o nome exato 'A (ID)' que aparece no teu Sheets
+contagem_processos = df.groupby('Objetivo')['A (ID)'].count().reset_index()
+contagem_processos.columns = ['Objetivo', 'Nº de Processos']
 
     # Layout: Colunas para o Gráfico e a Tabela de Contagem
     col1, col2 = st.columns([2, 1])
